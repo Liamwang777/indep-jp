@@ -56,44 +56,32 @@
 <h2>お問い合わせ<span class="hosoku">Contact</span></h2>
 
 
-
-<!-- INSERT_FORM_HERE -->
-
-<!-- modify this form HTML and place wherever you want your form -->
-<form action="https://formsubmit.co/liang.wang@indep-jp.com" method="POST">
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_next" value="https://indep-jp.com/confirm.html">
-  <label>
-    Your email:
-  <input type="email" name="email" required>
-  </label>
-  <label>
-    Your message:
-  <textarea name="message" required></textarea>
-  </label>
-  <button type="submit">Send</button>
-</form>
-
+<form
+  action="https://formspree.io/f/xzzvrreg"
+  method="POST"
+>
 
 <table class="ta1">
 <tr>
 <th>お名前※</th>
-<td><input type="text" name="お名前" size="30" class="ws"></td>
+<td><input type="text" name="name" size="30" class="ws"></td>
 </tr>
 <tr>
 <th>メールアドレス※</th>
-<td><input type="text" name="メールアドレス" size="30" class="ws"></td>
+<td><input type="email" name="email" size="30" class="ws"></td>
 </tr>
 <tr>
 <th>お問い合わせ詳細※</th>
-<td><textarea name="お問い合わせ詳細" cols="30" rows="10" class="wl"></textarea></td>
+<td><textarea name="message" cols="30" rows="10" class="wl"></textarea></td>
 </tr>
 </table>
+
+<input type="hidden" name="_next" value="https://indep-jp.com/finish.html">
 
 <p class="c">
 <input type="submit" value="内容を確認する">
 </p>
-
+</form>
 </section>
 
 </main>
